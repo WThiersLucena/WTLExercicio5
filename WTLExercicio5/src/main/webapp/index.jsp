@@ -18,8 +18,8 @@
 			<input class="form-control form-control-sm mt-3" type="text" placeholder="1 º" aria-label=".form-control-sm example" name="valor1">
 			<input class="form-control form-control-sm mt-3" type="text" placeholder="2 º" aria-label=".form-control-sm example" name="valor2">
 			<input class="form-control form-control-sm mt-3" type="text" placeholder="3 º" aria-label=".form-control-sm example" name="valor3">
-			<input class="mt-3" type="reset" value="limpar">
-			<input class="mt-3" type="submit" name="Somar" value="Enviar">
+			<input class="mt-3 btn-warning" type="reset" value="limpar">
+			<input class="mt-3 btn-success" type="submit" name="Somar" value="Enviar">
 		</form>
 	</div>
 </div>

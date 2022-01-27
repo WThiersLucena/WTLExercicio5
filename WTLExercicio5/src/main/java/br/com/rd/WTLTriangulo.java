@@ -41,6 +41,12 @@ public class WTLTriangulo extends HttpServlet {
 		int valor2 = Integer.parseInt(request.getParameter("valor2"));
 		int valor3 = Integer.parseInt(request.getParameter("valor3"));
 		
+		if(valor1 > 0 && valor2 > 0 && valor3 >0) {
+			if(valor1 + valor2 > valor3 && valor1 +valor3 > valor2 && valor2 + valor3 > valor1) {
+				response.getWriter().println(" Temos um triangulo");
+			};
+		};
+		
 		
 		if (valor1 + valor2 > valor3 && valor1 + valor3 > valor2 && valor2 + valor3 > valor1){
 			response.getWriter().println(" E um triangulo");
@@ -51,12 +57,18 @@ public class WTLTriangulo extends HttpServlet {
 		};
 		
 		
+		if (valor1 >0 && valor2 >0 && valor3 >0) {
+			response.getWriter().println(" E um triangulo");
+		}else{
+			response.getWriter().println(" Nao e um triangulo ");
+		};
 		
+	
 		
 				
-		response.getWriter().println("Resultado obritido ="+ valor1);
-		response.getWriter().println("Resultado obritido =" + valor2);
-		response.getWriter().println("Resultado obritido =" + valor3);
+		// response.getWriter().println("Resultado obritido ="+ valor1);
+		// response.getWriter().println("Resultado obritido =" + valor2);
+		// response.getWriter().println("Resultado obritido =" + valor3);
 	}
 
 }
